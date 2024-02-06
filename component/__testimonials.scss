@@ -1,0 +1,53 @@
+.clients__opoinions {
+  overflow: hidden;
+}
+.clients__wrapper {
+  display: flex;
+  gap: 5rem;
+}
+.clients__data {
+  display: flex;
+  gap: 2rem;
+}
+.clients__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.clients__opoinion {
+  border: 2px solid #ddd;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: auto min-content;
+  width: 40rem;
+  align-items: center;
+  padding: 3rem;
+  row-gap: 0.3rem;
+}
+.border-red {
+  border-color: var(--color-light-red);
+  box-shadow: -5rem 3rem 5rem #ddd;
+}
+.opoinion {
+  grid-column: span 2;
+  line-height: 3rem;
+  font-weight: 400;
+}
+.rates {
+  display: flex;
+  gap: 1rem;
+  &__star {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+.arrow__image {
+  width: 6rem;
+  height: 6rem;
+}
+.opinion__arrow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--default--padding);
+  align-items: center;
+}

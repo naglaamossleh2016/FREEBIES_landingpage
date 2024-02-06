@@ -1,0 +1,28 @@
+.features__image {
+  max-width: 100%;
+}
+.features {
+  column-gap: calc(var(--default--padding) * 2);
+  padding: 0 var(--default--padding);
+  &__content-desc {
+    margin-top: calc(var(--gutter) / 2);
+    &-p {
+      line-height: 30px;
+      font-weight: 400;
+      margin-bottom: calc(var(--gutter) / 2);
+    }
+    &-lists {
+      &-list {
+        background: url("../images/bx_bxs-check-circle.svg") no-repeat;
+        background-position: left center;
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding-left: 3rem;
+        line-height: 3;
+      }
+    }
+  }
+}
+.features .heading2 {
+  text-align: left;
+}

@@ -1,0 +1,15 @@
+.help {
+  grid-template-columns: auto 25rem;
+  padding: 5.9rem 7rem;
+  column-gap: 34rem;
+  background-color: var(--color-white);
+  align-self: center;
+}
+.heading2-subsc {
+  line-height: 4.5rem;
+  text-align: left;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--color-font-heading);
+  margin-bottom: 2rem;
+}

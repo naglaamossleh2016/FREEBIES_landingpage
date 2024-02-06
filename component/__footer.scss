@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  position: absolute;
+  bottom: -35rem;
+  width: 100%;
+  z-index: -1;
+  padding: 18rem 15rem 2rem;
+  line-height: 3rem;
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    &__image {
+      max-width: 100%;
+    }
+  }
+  &__lists {
+    margin-top: 3rem;
+  }
+}
+
+.footer a:link {
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footr__social-link:nth-of-type(2) {
+  padding: 0 2rem;
+}

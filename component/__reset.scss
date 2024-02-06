@@ -1,0 +1,32 @@
+// css reset
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--default-padding);
+}
+a {
+  font: inherit;
+  color: inherit;
+  display: inline-block;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+// end reset css

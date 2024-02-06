@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(var(--default--padding) / 2);
+  font-size: 1.6rem;
+  gap: calc(var(--default--padding) * 2);
+}
+.links {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: calc(var(--default--padding) / 2);
+  color: var(--color-default-font);
+  font-weight: 400;
+  transition: var(--transition-timing);
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+  }
+  &__link:hover,
+  &__link:active {
+    text-decoration: underline;
+  }
+}
+.account {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  color: var(--color-font-heading);
+}
