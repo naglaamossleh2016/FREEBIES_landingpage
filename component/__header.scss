@@ -3,6 +3,7 @@
   justify-content: space-between;
   margin-top: calc(var(--default--padding) / 2);
   font-size: 1.6rem;
+  background-color: var(--color-white);
 }
 .links {
   display: flex;
@@ -12,6 +13,10 @@
   color: var(--color-default-font);
   font-weight: 400;
   transition: var(--transition-timing);
+  @media (max-width: 950px) {
+    gap: 2rem;
+  }
+
   &__link:link,
   &__link:visited {
     text-decoration: none;
@@ -26,4 +31,10 @@
   align-items: center;
   gap: 3rem;
   color: var(--color-font-heading);
+  @media (max-width: 950px) {
+    gap: 2rem;
+  }
+}
+.burger__menu-checkbox {
+  display: none;
 }

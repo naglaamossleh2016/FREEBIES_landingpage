@@ -1,6 +1,6 @@
 .pricing__plans {
   display: flex;
-  gap: 5rem;
+  justify-content: space-around;
 }
 .plan {
   display: flex;
@@ -10,7 +10,7 @@
   flex-direction: column;
   border-radius: 1rem;
   border: 2px solid #dddddd;
-  width: 33.3%;
+  width: 30%;
   height: 76rem;
   &__image {
     width: 15rem;
@@ -42,9 +42,8 @@
 }
 .sponsers {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   &__image {
-    max-width: 100%;
+    max-width: 20%;
   }
 }
