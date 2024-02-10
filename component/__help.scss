@@ -2,11 +2,23 @@
   grid-template-columns: auto 25rem;
   padding: 5.9rem 7rem;
   // column-gap: 34rem;
-  background-color: #ccc;
+  background-color: var(--color-white);
   justify-content: space-between;
   align-self: center;
-  width: 100%;
-  //
+  width: 80%;
+  position: absolute;
+  bottom: 35rem;
+  border-radius: 1rem;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  @media (max-width: 750px) and (min-width: 359px) {
+    bottom: 55rem;
+  }
+  @media (max-width: 359px) {
+    bottom: 70rem;
+  }
 }
 .heading2-subsc {
   line-height: 4.5rem;
@@ -15,4 +27,23 @@
   font-weight: 500;
   color: var(--color-font-heading);
   margin-bottom: 2rem;
+  @media (max-width: 600px) {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    & br {
+      display: none;
+    }
+  }
+}
+
+.subscribe__content {
+  @media (max-width: 750px) {
+    justify-self: center;
+  }
+}
+.subscribe__content + .button {
+  @media (max-width: 750px) {
+    justify-self: center;
+    width: 100%;
+  }
 }

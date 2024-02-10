@@ -1,9 +1,13 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+
   margin-top: calc(var(--default--padding) / 2);
   font-size: 1.6rem;
   background-color: var(--color-white);
+  @media (max-width: 900px) {
+    justify-content: space-between;
+  }
 }
 .links {
   display: flex;

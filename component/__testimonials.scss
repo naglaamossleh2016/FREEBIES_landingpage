@@ -4,6 +4,11 @@
 .clients__wrapper {
   display: flex;
   justify-content: space-around;
+  @media (max-width: 750px) {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 2rem;
+  }
 }
 .clients__data {
   display: flex;
@@ -19,10 +24,20 @@
   border-radius: 1rem;
   display: grid;
   grid-template-columns: auto min-content;
-  width: 25%;
+  width: 30%;
   align-items: center;
   padding: 3rem;
   row-gap: 0.3rem;
+
+  @media (max-width: 900px) and (max-width: 600px) {
+    font-size: 1.4rem;
+    padding: 1rem;
+    width: auto;
+    gap: 1rem;
+  }
+  @media (max-width: 750px) {
+    width: 100%;
+  }
 }
 .border-red {
   border-color: var(--color-light-red);

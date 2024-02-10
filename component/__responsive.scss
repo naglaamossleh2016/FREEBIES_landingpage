@@ -1,7 +1,7 @@
-@media (max-width: 900px) and (min-width: 600px) {
+@media (max-width: 900px) {
   .header {
-    margin-top: 1rem;
-    border-bottom: 0.1rem solid var(--color-default-font);
+    margin: 1rem 2rem 0 2rem;
+    // border-bottom: 0.1rem solid var(--color-default-font);
     padding: 0.5rem 0;
   }
   .burger__menu {
@@ -29,14 +29,20 @@
     transform: translateY(-5px) rotate(-40deg);
   }
   .burger__menu-checkbox:checked ~ .links {
-    top: 6rem;
-    background-color: bisque;
+    top: 7rem;
+    width: 96%;
     z-index: 1;
+    @media (max-width: 460px) {
+      top: 6.3rem;
+      width: 91%;
+      font-size: 1.4rem;
+    }
   }
   .links {
     position: absolute;
     background-color: var(--color--light-grey);
-    top: 0;
+    top: 1rem;
+    height: 5rem;
     z-index: -1;
     padding: 1.9rem 0;
     justify-content: space-around;
